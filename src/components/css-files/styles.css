@@ -1,14 +1,24 @@
 .navbar-nav {
     width: 50%;
 }
-.nav-link {
-    color: rgb(255, 255, 255);
-}
+
 img {
     width: 200px;
     height: 70px;
 }
 
-.navbar-toggler-icon {
-    color: white;
+.nav-link, .cart {
+color: rgb(0, 0, 0);
+}
+
+.navigation-bar {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.scrolled {
+    background-color: #623700;
+}
+
+.not-scrolled {
+    background-color: transparent;
 }

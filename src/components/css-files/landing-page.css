@@ -1,74 +1,48 @@
+.homepage {
+    background-image: url('./images/Home-page/landing-page1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    position: relative;
+    height: 100vh;
+}
+
 .homepage-description {
     position: absolute;
+    background-color: rgba(86, 85, 85, 0.35);
+    color: #FFFFFF;
+    height: 85.7vh;
     width: 50%;
-    height: 86vh;
-    background: rgba(86, 85, 85, 0.54);
-    color: white;
+    top: 0;
 }
 
-.description {
-    border: green 1px solid;
+.description{
+    position: absolute;
+    top: 30%;
+    left: 4%
+}
+.description h3 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 3.5em;
+}
+.description p {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 1.2em;
 }
 
-.qoute {
-    font-size: 5em;
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 30vh;
+    background-color: white;
+    top: 87vh; 
 }
 
-/* Description */
-
-/* position: absolute;
-width: 850px;
-height: 1080px;
-left: 0px;
-top: 0px; */
-
-
-
-/* Rectangle 2 */
-
-/* position: absolute;
-width: 850px;
-height: 1080px;
-left: 0px;
-top: 0px;
-
-background: rgba(86, 85, 85, 0.54); */
-
-
-/* Indulge in the rich symphony of flavors at Coffee House. */
-
-/* position: absolute;
-width: 715px;
-height: 138px;
-left: 61px;
-top: 555px;
-
-font-family: 'Roboto Serif';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 42px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF; */
-
-
-
-/* Your daily dose of joy in a cup */
-
-/* position: absolute;
-width: 631px;
-height: 168px;
-left: 61px;
-top: 387px;
-
-font-family: 'Roboto Serif';
-font-style: normal;
-font-weight: 600;
-font-size: 74px;
-line-height: 87px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF; */
+.section2 h3 {
+    font-family: 'Roboto Serif', sans-serif;
+    
+}

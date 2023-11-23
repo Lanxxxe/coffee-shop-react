@@ -1,37 +1,50 @@
+import logo from './css-files/images/Home-page/Logo.png'
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './css-files/styles.css'
-import logo from './css-files/images/Logo.png'
-import { useState } from 'react';
+import './css-files/Styles.css'
 
 const Navbar = () => {
 
-  const [menu, setMenu] = useState("shop")
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolling(scrollTop > 10); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="navigation-bar position-relative">
-      <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src={logo} alt="Coffee House Logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <div className={`sticky-top navigation-bar ${isScrolling ? 'scrolled' : 'not-scrolled'}`}>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid ">
+          <Link className="navbar-brand" href="#"><img src={logo} alt="Coffee House Logo" /></Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-evenly">
-              <li class="nav-item">
-                <a onClick={() => {setMenu("shop")}} class="nav-link" aria-current="page" href="#">Home</a>
+          <div className="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <ul className="navbar-nav justify-content-evenly">
+              <li className="nav-item">
+                <Link className="nav-link" to='/'>Home</Link>
               </li>
-              <li class="nav-item">
-                <a onClick={() => {setMenu("about")}} class="nav-link" href="#">About</a>
+              <li className="nav-item">
+                <Link className="nav-link" to='/about' >About</Link>
               </li>
-              <li class="nav-item">
-                <a onClick={() => {setMenu("blog")}} class="nav-link ">Blog</a>
+              <li className="nav-item">
+                <Link className="nav-link " to='/blog'>Blog</Link>
               </li>
-              <li class="nav-item">
-                <a onClick={() => {setMenu("products")}} class="nav-link ">Products</a>
+              <li className="nav-item">
+                <Link className="nav-link " to='/products'>Products</Link>
               </li>
             </ul>
-            <a href=""><i className='bi bi-cart h4'></i></a>
+            <Link className='cart'><i className='bi bi-cart h4'></i></Link>
           </div>
         </div>
       </nav>

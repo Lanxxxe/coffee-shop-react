@@ -164,7 +164,7 @@ let products = [
     {
         id : 19,
         name : "Marocchino",
-        image : StrawberryLate,
+        image : Marocchino,
         catergory : 'Hot',
         price : 210,
     },
