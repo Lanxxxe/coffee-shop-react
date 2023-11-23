@@ -1,0 +1,74 @@
+.homepage-description {
+    position: absolute;
+    width: 50%;
+    height: 86vh;
+    background: rgba(86, 85, 85, 0.54);
+    color: white;
+}
+
+.description {
+    border: green 1px solid;
+}
+
+.qoute {
+    font-size: 5em;
+}
+
+/* Description */
+
+/* position: absolute;
+width: 850px;
+height: 1080px;
+left: 0px;
+top: 0px; */
+
+
+
+/* Rectangle 2 */
+
+/* position: absolute;
+width: 850px;
+height: 1080px;
+left: 0px;
+top: 0px;
+
+background: rgba(86, 85, 85, 0.54); */
+
+
+/* Indulge in the rich symphony of flavors at Coffee House. */
+
+/* position: absolute;
+width: 715px;
+height: 138px;
+left: 61px;
+top: 555px;
+
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF; */
+
+
+
+/* Your daily dose of joy in a cup */
+
+/* position: absolute;
+width: 631px;
+height: 168px;
+left: 61px;
+top: 387px;
+
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 600;
+font-size: 74px;
+line-height: 87px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF; */

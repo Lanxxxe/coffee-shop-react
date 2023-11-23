@@ -1,0 +1,7 @@
+.landing {
+    background-image: url('components/css-files/images/Home-page/landing-page1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
