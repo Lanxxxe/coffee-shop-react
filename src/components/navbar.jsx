@@ -1,7 +1,6 @@
 import logo from './css-files/images/Home-page/Logo.png'
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './css-files/Styles.css'
 
 const Navbar = () => {
@@ -22,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`sticky-top navigation-bar ${isScrolling ? 'scrolled' : 'not-scrolled'}`}>
+    <div className={`fixed-top navigation-bar ${isScrolling ? 'scrolled' : 'not-scrolled'}`}>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid ">
           <Link className="navbar-brand" href="#"><img src={logo} alt="Coffee House Logo" /></Link>
@@ -38,13 +37,13 @@ const Navbar = () => {
                 <Link className="nav-link" to='/about' >About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to='/blog'>Blog</Link>
+                <Link className="nav-link" to='/blog'>Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to='/products'>Products</Link>
+                <Link className="nav-link"  to='/products'>Products</Link>
               </li>
             </ul>
-            <Link className='cart'><i className='bi bi-cart h4'></i></Link>
+            <Link className='nav-link cart'><i className='bi bi-cart h4'></i></Link>
           </div>
         </div>
       </nav>

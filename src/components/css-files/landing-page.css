@@ -1,48 +1,84 @@
-.homepage {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-description {
     background-image: url('./images/Home-page/landing-page1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-
-    position: relative;
-    height: 100vh;
-}
-
-.homepage-description {
-    position: absolute;
-    background-color: rgba(86, 85, 85, 0.35);
     color: #FFFFFF;
-    height: 85.7vh;
-    width: 50%;
-    top: 0;
 }
 
-.description{
-    position: absolute;
-    top: 30%;
-    left: 4%
-}
-.description h3 {
+.description h1 {
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 3.5em;
+    font-size: 64px;
 }
 .description p {
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 1.2em;
+}
+.description {
+    height: 100vh;
+    width: 50%;
 }
 
 .section2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 30vh;
-    background-color: white;
-    top: 87vh; 
+    margin: 15% 0 15% 0;
 }
 
 .section2 h3 {
     font-family: 'Roboto Serif', sans-serif;
+}
+
+.section3 h1, .section4 h1, .section5 h1{
+    color: white;
+    font-size: 120px;
+    font-family: 'Roboto Serif';
+}
+
+.section3 h4,  .section4 h4, .section5 h4 {
+    color: #FFB658;
+}
+
+.section3 {
+    background-image: url('./images/Carousel-2/pexels-pixabay-47316.jpg');
+    z-index: 0;
     
 }
+.section4 {
+    background-image: url('./images/Carousel-2/pexels-miriam-alonso-7592472.jpg');
+    z-index: 3;
+}
+.section5 {
+    background-image: url('./images/Carousel-2/pexels-ron-lach-8844583.jpg');
+    z-index: 5;
+}
+
+.section3, .section4, .section5 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section6 h1 {
+    color: #FFB658;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.section6 h4 {
+    font-family: 'Roboto Serif';
+    font-weight: lighter;
+}
+
+.footer {
+    height: 20vh;
+    z-index: 100;
+}
+
+
