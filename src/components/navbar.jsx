@@ -31,16 +31,16 @@ const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
             <ul className="navbar-nav justify-content-evenly">
               <li className="nav-item">
-                <Link className="nav-link" to='/'>Home</Link>
+                <Link className="nav-link" activeClassName='active' to='/'>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to='/about' >About</Link>
+                <Link className="nav-link" activeClassName='active' to='/about' >About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to='/blog'>Blog</Link>
+                <Link className="nav-link" activeClassName='active' to='/blog'>Blog</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link"  to='/products'>Products</Link>
+                <Link className="nav-link" activeClassName='active' to='/products'>Products</Link>
               </li>
             </ul>
             <Link className='nav-link cart'><i className='bi bi-cart h4'></i></Link>

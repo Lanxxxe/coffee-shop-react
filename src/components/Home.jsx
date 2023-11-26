@@ -12,22 +12,25 @@ const Home = () => {
 
   const [isDiv6Visible, setDiv6Visible] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    const div6 = document.getElementById('section6');
-    if (div6) {
-      const rect = div6.getBoundingClientRect();
-      // Adjust the 1 pixel threshold
-      setDiv6Visible(rect.top >= -(window.innerHeight) && rect.bottom <= window.innerHeight + window.innerHeight);
-    }
-  };
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const div6 = document.getElementById('section6');
+      if (div6) {
+        const rect = div6.getBoundingClientRect();
+        setDiv6Visible(rect.top > -(window.innerHeight) && rect.bottom < window.innerHeight + window.innerHeight);
+      }
+    };
 
-  window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   
   return (
@@ -67,7 +70,7 @@ useEffect(() => {
           </div>
         </div>
 
-      <div className="section6 container-fluid p-3 align-items-center mt-5 mb-5 sticky-top" id='section6'> 
+      <div className="section6 container-fluid p-3 align-items-center mt-5 mb-5" id='section6'> 
         <h1>Coffee House</h1>
         <h4 className='mt-3'>We our the coffee house where the finest coffee blends meet the ease of online indulgence. Explore our curated selection,
           and elevate your coffee moments with the perfect brew delivered to your doorstep.
@@ -82,11 +85,14 @@ useEffect(() => {
         </h4>
       </div>
 
-      <footer className='footer container-fluid d-flex align-items-center justify-content-center bg-body-tertiary'>
-        <div className='footer-content'>
-          <img src={Logo} alt="" />
-          <div>
-            <i className='bi bi-facebook'></i>
+      <footer className='footer container-fluid d-flex align-items-center justify-content-center'>
+        <div className='footer-content container d-flex flex-column align-items-center justify-items-center'>
+          <img className='w-25' src={Logo} alt="Coffee House Logo" />
+          <div className='icons d-flex align-items-center justify-content-evenly'>
+            <i className='facebook fs-2 bi bi-facebook'></i>
+            <i className='youtube fs-2 bi bi-youtube'></i>
+            <i className='instagram fs-2 bi bi-instagram'></i>
+            <i className='linkedin fs-2 bi bi-linkedin'></i>
           </div>
         </div>
       </footer>

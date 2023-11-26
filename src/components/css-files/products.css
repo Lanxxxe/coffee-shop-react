@@ -1,0 +1,34 @@
+.blank {
+    background-color: #623700;
+    height: 14vh;
+}
+
+.hot {
+    background-color: red;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border: none;
+}
+
+.cold {
+    background-color: #22496D;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border: none;
+}
+
+.cookies {
+    background-color: #51B14F;
+    color: white;
+    padding: 10px 100px 10px 100px;
+    border: none;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+}
+
+.product-card {
+    flex: 1;
+}

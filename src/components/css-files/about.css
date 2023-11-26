@@ -10,14 +10,20 @@
     width: 50%;
     height: 30%;
 }
+.logo-container p {
+    color: white;
+}
+
 .logo {
     width: 100%;
     height: 100%;
 }
 
 .image {
-    width: 30%;
-    height: 30%;
+    /* width: 30%;
+    height: 30%; */
+    width: 335px;
+    height: 243px;
 }
 .mission h3, .vision h3, .story-section h1 {
     font-family: 'Roboto Serif', sans-serif;
@@ -25,4 +31,40 @@
 
 .mission p, .vision p, .story-section p {
     font-family: 'Roboto Slab', sans-serif;
+}
+
+.black-container {
+    background-image: url('/src/components/css-files/images/About/About3.3.jpg');
+}
+
+.iced-container {
+    background-image: url('/src/components/css-files/images/About/About3.1.jpg');
+}
+
+.cookies-container {
+    background-image: url('/src/components/css-files/images/About/About3.2.jpg');
+}
+
+.black-container, .iced-container, .cookies-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Roboto Serif';
+    width: 300px;
+    height: 400px;
+}
+/* .black-container > p, .iced-container > p, .cookies-container > p{
+    color: transparent;
+} */
+.black-container:hover, .iced-container:hover, .cookies-container:hover{
+    color: white;
+}
+.locations > p, .locations > h4 {
+    flex: 1;
+    padding: 20px 0 20px 0;
+}
+
+.locations {
+    border-bottom: 1px gray solid;
 }

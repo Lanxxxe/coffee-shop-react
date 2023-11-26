@@ -76,9 +76,30 @@
     font-weight: lighter;
 }
 
-.footer {
-    height: 20vh;
+.footer-content {
+    height: 30vh;
     z-index: 100;
+    border: 1px green solid;
 }
+
+footer {
+    background-color: #6A6D6A;
+}
+
+.footer-content > img {
+    height: 115px;
+}
+
+.icons {
+    width: 50vw;
+}
+.icons > i {
+    color: white;  
+}
+
+.facebook, .instagram, .youtube {
+    padding-right: 65px;
+    border-right: 2px white solid;
+} 
 
 
