@@ -13,8 +13,8 @@
 }
 
 .vanilla-image {
-    width: 60%;
-    height: 66%;
+    width: 27vw;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -32,35 +32,89 @@
 
 .first-blog > h2 {
     font-family: 'Roboto Serif', sans-serif;
-    font-size: 45px;
+    font-size: 2.4em;
 }
 .first-blog > p {
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* .link2, .blog2 {
+    border: 1px solid black;
+} */
+
 .blog-image {
-    width: 380px;
-    height: 200px;
+    width: 27vw;
+    height: 26vh;
 }
 .context {
     flex: 1;
 }
+.context h3 {
+    font-size: 1.4em;
+}
+.context p {
+    font-size: 0.9em;
+}
+.blog3 {
+    margin-top: 100px;
+}
 
 .blog3-headline {
-    width: 50vw;
+    width: 57vw;
     height: 100vh;
     padding-top: 10%;
 }
 
 .blog3-headline > h1{
-    font-size: 64px;
+    font-size: 3em;
     font-family: 'Roboto Serif', sans-serif;
     color: #FFFFFF;
     padding-left: 30px;
 }
 
 .blog3-headline > p{
-    font-size: 20px;
+    font-size: 0.9;
     font-family: 'Roboto Serif', sans-serif;
-    color: #FFFFFF;
+    color: #ffffffe3;
     padding-left: 33px;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog1 {
+        padding: 10px;
+        margin-top: 95px;
+        width: 100vw;
+        height: 60vh;
+    }
+    .vanilla-image {
+        width: 150px;
+        height: auto;
+    }
+    .first-blog h2 {
+        font-size: 24px;
+    }
+    .first-blog p {
+        font-size: 12px;
+    }
+    .blog-image {
+        width: 50vw;
+        height: 27vh;
+    }
+    .blog3 {
+        width: 100vw;
+        height: 60vh;
+        margin-top: 50px;
+    }
+    .blog3-headline {
+        width: 100vw;
+        height: 60vh;
+    }
+    .blog3-headline > h1 {
+        font-size: 1.8em;
+    }
+    .blog3-headline > p {
+        font-size: 0.7em;
+    }
+
 }

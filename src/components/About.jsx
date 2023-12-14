@@ -7,23 +7,25 @@ import Image2 from './css-files/images/About/About2,2.jpg';
 
 const About = () => {
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0,0);
+  // }, []);
 
   return (
     <div>   
       <div className="section1 container-fluid d-flex justify-content-center align-items-center">
-        <div className='logo-container'>
+        <div className='d-flex flex-column align-items-center'>
           <img className='logo' src={logo} alt="Logo" />
-          <p className='since text-center'>
-            since 2023
-          </p>
-
+          
           <p className='section1-quote text-center'>“Brewing joy and vitality in every cup, our coffee is the 
             perfect pick-me-up for your moments of inspiration and motivation.”</p>
+            
+            <p className='since text-center '>
+            since 2023
+          </p>
         </div>
       </div>
+
       <div className='story-section p-5 mt-5'>
         <h1 className='text-center title'>
             The Art of Coffee: Our Story
@@ -44,50 +46,50 @@ const About = () => {
           </p>
       </div>
       
-      <div className="mission-section container d-block mt-5">
-        <div className='vision-container d-block d-md-flex'>
-          <img className='image rounded-2 mx-auto d-flex' src={Image1} alt="" />
-          <div className='vision mx-4'>
-            <h3 className='title text-center text-md-start'>Our Vission</h3>
-            <p className='mt-3'>To be the heartbeat of our community, Coffee House envisions a space where the aroma of freshly brewed coffee intertwines with the spirit of connection. 
+      <div className="mission-section container-fluid d-block d-md-flex flex-column mt-5">
+        <div className='vision-container d-block d-md-flex align-items-center'>
+          <img className='image rounded-2 mx-auto d-block' src={Image1} alt="" />
+          <div className='vision mx-auto d-block'>
+            <h3 className='title text-center text-md-start mt-3 mt-md-0'>Our Vision</h3>
+            <p className='text-center text-md-start'>To be the heartbeat of our community, Coffee House envisions a space where the aroma of freshly brewed coffee intertwines with the spirit of connection. 
               We strive to create a haven where every cup is a catalyst for meaningful conversations, shared experiences, and a momentary escape from the hustle of daily life.</p>
           </div>
         </div>
 
-        <div className='mission-container d-block d-md-flex mt-5'>
-          <img className='image rounded-2 mx-auto d-flex' src={Image2} alt="" />
-          <div className='mission mx-4'>
-            <h3 className='title text-center text-md-start'>Our Mission</h3>
-            <p className=''>At Coffee House, our mission is to craft exceptional coffee experiences that transcend the ordinary. We are committed to sourcing the finest beans, fostering a welcoming environment, and serving each cup with passion and precision. Through our dedication to quality, community, and the joy found in a well-brewed cup, we aim to be the go-to destination for those seeking a genuine, uplifting, and flavorful coffee journey.</p>
+        <div className='mission-container d-block d-md-flex align-items-center mt-5'>
+          <img className='image rounded-2 mx-auto d-block' src={Image2} alt="" />
+          <div className='mission mx-auto d-block'>
+            <h3 className='title text-center text-md-start mt-3 mt-md-0'>Our Mission</h3>
+            <p className='text-center text-md-start'>At Coffee House, our mission is to craft exceptional coffee experiences that transcend the ordinary. We are committed to sourcing the finest beans, fostering a welcoming environment, and serving each cup with passion and precision. Through our dedication to quality, community, and the joy found in a well-brewed cup, we aim to be the go-to destination for those seeking a genuine, uplifting, and flavorful coffee journey.</p>
           </div>
         </div>
       </div>
 
-      <div className='container-fluid p-5'>
+      <div className='container-fluid p-5 coffe-card m-2'>
         <h1 className='text-center'>What we serve...</h1>
-        <div className='d-block d-md-flex align-items-center justify-content-around p-3 pt-5'>
-          <div className='black-container rounded-2 mx-auto p-2 m-2'>
-            <h2 className='black-card text-center'>Black Coffee</h2>
-            <p className=' mx-auto'>Black coffee is a potent source of antioxidants, which can help protect cells from damage caused by free radicals.</p>
+        <div className='cards d-block d-md-flex align-items-center justify-content-around p-3 pt-5'>
+          <div className='black-container rounded-2 mx-auto d-block d-flex flex-column m-2'>
+            <h2 className='black-card'>Black Coffee</h2>
+            <p className=''>Black coffee is a potent source of antioxidants, which can help protect cells from damage caused by free radicals.</p>
           </div>
-          <div className='iced-container rounded-2 mx-auto p-2 m-2'>
-            <h2 className='iced-card text-center '>Iced Coffee</h2>
-            <p className='mx-auto'>Iced coffee provides a refreshing way to stay hydrated, especially during warmer months, making it a more enjoyable alternative to plain water.</p>
+          <div className='iced-container rounded-2 mx-auto d-block d-flex flex-column m-2'>
+            <h2 className='iced-card'>Iced Coffee</h2>
+            <p className=''>Iced coffee provides a refreshing way to stay hydrated, especially during warmer months, making it a more enjoyable alternative to plain water.</p>
           </div>
-          <div className='cookies-container rounded-2 mx-auto p-2 m-2'>
-            <h2 className='cookies-card text-center'>Cookies</h2>
-            <p className='mx-auto'>Cookies are a delightful and satisfying treat, providing a moment of indulgence and enjoyment.</p>
+          <div className='cookies-container rounded-2 mx-auto d-block d-flex flex-column m-2'>
+            <h2 className='cookies-card'>Cookies</h2>
+            <p className=''>Cookies are a delightful and satisfying treat, providing a moment of indulgence and enjoyment.</p>
           </div>
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-fluid">
         <h1>Visit our Coffee Houses</h1>
 
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='locations d-flex align-items-center justify-content-between'>
             <h4>Main Branch</h4>
-            <p>Downtown Tacloban City, Leyte</p>
+            <p>Tacloban City, Leyte</p>
             <p>09236429344</p>
           </div>
           <div className='locations d-flex align-items-center justify-content-between'>

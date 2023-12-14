@@ -1,0 +1,55 @@
+
+.space {
+    background-color: #623700;
+    position: sticky;
+    top: 0;
+    height: 14.5vh;
+}
+
+.checkout-container {
+    height: auto;
+    width: 100vw;
+    padding: 43px;
+}
+
+.shoppee, .gcash {
+    height: 37px;
+    width: 98px;
+}
+.riders-note {
+    width: 43.5vw;
+}
+
+.customer-information, .bill-information {
+    flex: 1;
+    margin: 20px;
+}
+
+
+.back-button, .proceed-button {
+    padding: 13px 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+.back-button {
+    background-color: #EDAC59;
+}
+
+.proceed-button {
+    background-color: #71E26F;
+}
+
+.checkout-image {
+    width: 7vw;
+    height: auto;
+}
+
+.item-image{
+    flex: 1;
+}
+.item-information {
+    flex: 3;
+    margin-left: 10px;
+}
+

@@ -3,28 +3,39 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     height: 100vh;
 }
-
-.logo-container {
-    width: 50%;
-    height: 30%;
-}
-.logo-container p {
+.section1 div {
+    font-family: 'Roboto Serif', sans-serif;
     color: white;
 }
 
-.logo {
-    width: 100%;
-    height: 100%;
+.since {
+    margin-top: 10vh;
+    font-size: 1em;
+    color: #e6bc51;
+}
+.section1-quote {
+    width: 80vw;
+    font-size: 1.4em;
+}
+
+.section1 img {
+    width: auto;
+    height: auto;
 }
 
 .image {
-    /* width: 30%;
-    height: 30%; */
-    width: 335px;
-    height: 243px;
+    width: 350px;
+    height: auto;
 }
+
+.mission, .vision {
+    width: 50vw;
+}
+
 .mission h3, .vision h3, .story-section h1 {
     font-family: 'Roboto Serif', sans-serif;
 }
@@ -51,15 +62,26 @@
     background-size: cover;
     color: #ffffff;
     font-family: 'Roboto Serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     width: 300px;
     height: 400px;
 }
-/* .black-container > p, .iced-container > p, .cookies-container > p{
-    color: transparent;
-} */
-.black-container:hover, .iced-container:hover, .cookies-container:hover{
-    color: white;
+
+.cards p {
+    font-size: 0.9em;
+    display: none;
+    opacity: 0;
 }
+.black-container:hover p, .iced-container:hover p, .cookies-container:hover p{
+    display: block;
+    opacity: 1;
+}
+
+
 .locations > p, .locations > h4 {
     flex: 1;
     padding: 20px 0 20px 0;
@@ -68,3 +90,41 @@
 .locations {
     border-bottom: 1px gray solid;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        margin-top: 95px;
+        width: 100vw;
+        height: 60vh;
+    }
+    .section1 img {
+        width: 65vw;
+    }
+    .since {
+        font-size: 12px;
+    }
+    .section1-quote {
+        font-size: 16px;
+    }
+
+
+    .black-container p, .iced-container p, .cookies-container p {
+        display: block;
+        opacity: 1;
+    }
+    .locations > h4 {
+        font-size: 18px;
+    }
+    .locations > p {
+        font-size: 12px;
+    }
+}
+/* @keyframes fadeUp {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+} */

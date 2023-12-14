@@ -2,33 +2,122 @@
     background-color: #623700;
     height: 14vh;
 }
+.filt-buttons {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    height: 20vh;
+}
+
+.all, .hot, .cold, .cookies {
+    width: 250px;
+    font-size: 1em;
+    color: white;
+    padding: 1vh 6vw;
+    border: none;
+}
+
+.all {
+    background-color: rgb(50, 165, 48);
+    box-shadow: 4px 4px 3px 0px rgba(126, 124, 124, 0.9)
+}
+.all:hover {
+    background-color: rgb(62, 137, 60);
+}
 
 .hot {
-    background-color: red;
-    color: white;
-    padding: 10px 100px 10px 100px;
-    border: none;
+    background-color: rgb(205, 75, 75);
+    box-shadow: 4px 4px 3px 0px  rgba(126, 124, 124, 0.9)
+}
+.hot:hover {
+    background-color: rgb(184, 34, 64);
 }
 
 .cold {
-    background-color: #22496D;
-    color: white;
-    padding: 10px 100px 10px 100px;
-    border: none;
+    background-color: rgb(47, 103, 156);
+    box-shadow: 4px 4px 3px 0px  rgba(126, 124, 124, 0.9)
+}
+.cold:hover {
+    background-color: rgb(21, 82, 139);
+}
+.cookies {
+    background-color: rgb(206, 166, 33);
+    box-shadow: 4px 4px 3px 0px  rgba(126, 124, 124, 0.9)
+}
+.cookies:hover {
+    background-color: rgb(172, 136, 15);
 }
 
-.cookies {
-    background-color: #51B14F;
-    color: white;
-    padding: 10px 100px 10px 100px;
-    border: none;
+.product-container {
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid black ; */
 }
 
 .products {
-    width: 100%;
+    width: 200px;
     height: auto;
 }
 
 .product-card {
-    flex: 1;
+    margin-top: 50px;
+    padding: 0px 10px;
+    /* border: 1px solid red; */
+    width: 270px;
+    box-sizing: border-box;
+}
+
+.prod-info {
+    /* border: 1px solid green; */
+    margin-top: 10px;
+}
+.prod-info h5{
+    font-size: 18px;
+}
+.prod-info p{
+    margin-top: 7px;
+    font-size: 16px;
+    color: rgb(39, 173, 39);
+}
+.des {
+    font-size: 14px;
+}
+.buttons {
+    width: auto;
+    /* border: 1px solid yellowgreen; */
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 7px 10px;
+    font-size: 16px;
+    width: 200px;
+    border: none;
+    box-shadow: 2px 2px 3px 0px  rgba(126, 124, 124, 0.9)
+}
+.add {
+    background-color: #cf9851;
+}
+
+.buy-now {
+    background-color: rgb(81, 211, 81);
+}
+
+@media only screen and (max-width: 980px) {
+    .filt-buttons button {
+        width: 200px;
+    }
+    .products {
+        width: 155px;
+    }
+    .product-card {
+        width: 230px;
+    }
+    .prod-info h5 {
+        font-size: 1em;
+    }
+    .prod-info p {
+        font-size: 1em;
+    }
+    .des {
+        font-size: 0.8em;
+    }
 }

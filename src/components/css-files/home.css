@@ -1,45 +1,59 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .homepage-description {
     background-image: url('./images/Home-page/landing-page1.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 90%;
     background-size: cover;
     height: 100vh;
-    color: #FFFFFF;
+    color: #f6f4f4;
 }
 
-.description h1 {
-    font-family: 'Roboto Serif', sans-serif;
-    font-size: 64px;
-}
-.description p {
-    font-family: 'Roboto Serif', sans-serif;
-}
 .description {
-    height: 100vh;
+    height: 100%;
     width: 50%;
 }
 
+.description em {
+    color: #71E26F;
+} 
+
+.description h1 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 4.7vw;
+}
+.description p {
+    font-family: 'Roboto Serif', sans-serif;
+    margin-top: 1.6vh;
+    font-size: clamp(10px, 1vw, 18px);
+    font-weight: lighter;
+}
+
 .section2 {
-    margin: 15% 0 15% 0;
+    margin: 12% 0 12% 0;
+}
+.section2 h3 {
+    color: #484848;
 }
 
 .section2 h3 {
     font-family: 'Roboto Serif', sans-serif;
+    font-size: 2vw;
 }
 
 .section3 h1, .section4 h1, .section5 h1{
     color: white;
-    font-size: 120px;
+    font-size: 7vw;
     font-family: 'Roboto Serif';
 }
 
 .section3 h4,  .section4 h4, .section5 h4 {
-    color: #FFB658;
+    color: #47ed44;
+    font-size: 2.3vw;
 }
 
 .section3 {
@@ -69,15 +83,22 @@
 .section6 h1 {
     color: #FFB658;
     font-family: 'Roboto Serif', sans-serif;
+    font-size: 2.9vw;
 }
 
 .section6 h4 {
     font-family: 'Roboto Serif';
     font-weight: lighter;
+    font-size: 1.7vw;
+}
+
+.images {
+    width: 13vw;
+    height: auto;
 }
 
 .footer-content {
-    height: 30vh;
+    height: 22vh;
     z-index: 100;
     border: 1px green solid;
 }
@@ -86,20 +107,55 @@ footer {
     background-color: #6A6D6A;
 }
 
-.footer-content > img {
-    height: 115px;
+.footer-content img {
+    height: 80px;
+    width: auto;
 }
 
 .icons {
     width: 50vw;
 }
-.icons > i {
+.icons > i {        
     color: white;  
 }
 
-.facebook, .instagram, .youtube {
-    padding-right: 65px;
-    border-right: 2px white solid;
-} 
+.icons > i:hover {
+    background-color: #6e9c6d;
+}
+.facebook, .instagram, .youtube, .linkedin {
+    
+    padding: 3px 12px 3px 12px;
+    background-color: #5c5c5c;
+    border-radius: 100%;
+}
+@media only screen and (max-width: 600px){
+    .section3 {
+        height: 100px;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    .homepage-description {
+        width: 100vw;
+        height: 50vh;
+        margin-top: 95px;
+    }
+    .homepage {
+        overflow: hidden;
+    }
+    .section3, .section4, .section5{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .homepage-description {
+        width: 100vw;
+        height: 50vh;
+        margin-top: 95px;
+    }
+    .section3, .section4, .section5 {
+        width: 100vw;
+        height: 60vh;
+    }
 
+}
