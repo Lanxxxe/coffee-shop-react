@@ -7,9 +7,9 @@ import Image2 from './css-files/images/About/About2,2.jpg';
 
 const About = () => {
 
-  // useEffect(() => {
-  //   window.scrollTo(0,0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   return (
     <div>   
